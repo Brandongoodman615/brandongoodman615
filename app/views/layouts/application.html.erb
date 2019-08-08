@@ -12,8 +12,12 @@
 
   <header class="blog-header py-3">
     <div class="text-center container">
-      <p class="blog-header-logo text-dark text-center" style="margin-bottom:-12px;">BrandonGoodman615</p>
-      <nav class="nav d-flex justify-content-between" style="margin: 0 100px;">
+        <p class="blog-header-logo text-dark text-center">
+          <%= image_tag("rubylogo.png", class: "header-logo img-fluid", alt: "Responsive image") %>
+          <%= mail_to "brandongoodman615@gmail.com", "BrandonGoodman615", subject: "We want to hire you!", body: "You're exactly what we are looking for! When can you start?", class: "text-dark mail-header" %>
+          <%= image_tag("rubylogo2.png", class: "header-logo img-fluid", alt: "Responsive image") %>
+        </p>
+      <nav class="nav d-flex justify-content-between">
         <a class="p-2 text-muted" href="#">World</a>
         <a class="p-2 text-muted" href="#">U.S.</a>
         <a class="p-2 text-muted" href="#">Technology</a>
