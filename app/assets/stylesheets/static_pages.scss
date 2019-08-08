@@ -2,3 +2,65 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+@media (max-width: 768px) {
+  .skills-box {
+    margin-top: 0px;
+  }
+  .side-logos {
+    margin-top: 48px;
+  }
+  .side-bottom-logos {
+    margin-top: 35px;
+  }
+}
+@media (min-width: 769px) {
+  .skills-box {
+    margin-top: 90px;
+  }
+}
+
+
+#ruby-logo {
+  padding: 25px;
+}
+#rails-logo {
+  padding-top: 50px;
+}
+#github-logo {
+  padding-top: 53px;
+}
+#git-logo{
+  padding: 15px;
+}
+
+
+#html-logo {
+  padding: 25px;
+}
+#css-logo {
+  padding: 25px;
+}
+
+
+#js-logo {
+  padding: 25px;
+}
+#jquery-logo {
+  padding: 10px;
+  padding-top: 25px;
+}
+
+
+#bootstrap-logo {
+  padding: 20px;
+}
+#jira-logo {
+  padding-top: 56px;
+}
+#slack-logo {
+  padding-top: 50px;
+}
+#circleci-logo {
+  padding: 10px;
+}
