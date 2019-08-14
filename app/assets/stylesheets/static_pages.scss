@@ -2,7 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.phone-info {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+.email-info {
+  font-weight: 750;
+  color: #2c6ab0;
+  font-size: 22px;
+}
+.github-info {
+  height: 30px;
+  margin-left: -4px;
+  margin-bottom: 3px;
+}
+.linkedin-info {
+  height: 26px;
+}
 
+.section-header {
+  margin-bottom: 0;
+}
+.back-to-top {
+  margin-left: 10px;
+}
 
 #ruby-logo {
   padding: 13px;

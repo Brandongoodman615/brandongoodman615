@@ -8,23 +8,34 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag asset_path('rubylogo.png') %>
+    <script>
+      $(document).on('click', 'a[href^="#"]', function (e) {
+        e.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 1000, 'linear');
+      });
+    </script>
   </head>
 
   <header class="blog-header py-3 shadow">
-    <div class="text-center container">
-        <p class="blog-header-logo text-dark text-center">
-          <%= image_tag("rubylogo.png", class: "header-logo img-fluid", alt: "Responsive image") %>
-          <%= mail_to "brandongoodman615@gmail.com", "BrandonGoodman615", subject: "We want to hire you!", body: "You're exactly what we are looking for! When can you start?", class: "text-dark mail-header" %>
-          <%= image_tag("rubylogo2.png", class: "header-logo img-fluid", alt: "Responsive image") %>
-        </p>
-      <nav class="nav d-flex justify-content-between">
-        <a class="p-2 text-muted" href="https://github.com/Brandongoodman615">GitHub</a>
-        <a class="p-2 text-muted" href="https://www.linkedin.com/in/brandon-goodman-50a3b2161/">LinkedIn</a>
-        <a class="p-2 text-muted" href="#">Technology</a>
-        <a class="p-2 text-muted" href="#">Design</a>
-        <a class="p-2 text-muted" href="#">Culture</a>
-      </nav>
-    </div>
+    <section id="top">
+      <div class="text-center container">
+          <p class="blog-header-logo text-dark text-center">
+            <%= image_tag("rubylogo.png", class: "header-logo img-fluid", alt: "Responsive image") %>
+            <%= mail_to "brandongoodman615@gmail.com", "BrandonGoodman615", subject: "We want to hire you!", body: "You're exactly what we are looking for! When can you start?", class: "text-dark mail-header" %>
+            <%= image_tag("rubylogo2.png", class: "header-logo img-fluid", alt: "Responsive image") %>
+          </p>
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" href="#skills">Skills</a>
+          <a class="p-2 text-muted" href="#projects">Projects</a>
+          <a class="p-2 text-muted" href="#references">References</a>
+          <a class="p-2 text-muted" href="#experience">Experience</a>
+          <a class="p-2 text-muted" href="#education">Education</a>
+          <a class="p-2 text-muted" href="#books">Books</a>
+        </nav>
+      </div>
+    </section>
   </header>
 
   <body>
