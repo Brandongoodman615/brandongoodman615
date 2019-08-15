@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BrandonGoodman615</title>
+    <title>Brandon Goodman</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,6 +9,10 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag asset_path('rubylogo.png') %>
     <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+
       $(document).on('click', 'a[href^="#"]', function (e) {
         e.preventDefault();
         $('html, body').stop().animate({
@@ -18,15 +22,14 @@
     </script>
   </head>
 
-  <header class="blog-header py-3 shadow" style="height: 170px;">
+  <header class="blog-header py-3 shadow">
     <section id="top">
       <div class="text-center container">
         <p class="blog-header-logo text-dark text-center">
-          <%= image_tag("rubylogo.png", class: "header-logo img-fluid", alt: "Responsive image") %>
-          <%= mail_to "brandongoodman615@gmail.com", "BrandonGoodman615", subject: "We want to hire you!", body: "You're exactly what we are looking for! When can you start?", class: "text-dark mail-header" %>
-          <%= image_tag("rubylogo2.png", class: "header-logo img-fluid", alt: "Responsive image") %>
+          <%# <%= image_tag("rubylogo.png", class: "header-logo img-fluid", alt: "Responsive image") %>
+          <%= mail_to "brandongoodman615@gmail.com", "Brandon Goodman", subject: "We want to hire you!", body: "You're exactly what we are looking for! When can you start?", class: "text-dark mail-header" %>
+          <%# <%= image_tag("rubylogo2.png", class: "header-logo img-fluid", alt: "Responsive image") %>
         </p>
-        <%= link_to 'Download My Resume Here', 'BGresume.pdf', download: 'BrandonGoodmanResume' %>
         <nav class="nav d-flex justify-content-between">
           <a class="p-2 text-muted" href="#skills">Skills</a>
           <a class="p-2 text-muted" href="#projects">Projects</a>

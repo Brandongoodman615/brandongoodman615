@@ -2,20 +2,23 @@
 <div class="container">
   <div class="jumbotron p-4 p-md-5 bg-dark text-white rounded shadow">
     <div class="row">
-      <div class="col-md-3 text-center"> 
-        <p class="phone-info">615-394-9353</p>
-      </div>
-      <div class="col-md-3 text-center"> 
+      <div class="col-md-2 offset-1 text-center"> 
         <%= mail_to "brandongoodman615@gmail.com", "Email", class: "email-info", style: "text-decoration: none;color: #2c6ab0;", subject: "We want to hire you!", body: "You're exactly what we are looking for! When can you start?" %>
       </div>
-      <div class="col-md-3 text-center"> 
+      <div class="col-md-2 text-center">
+        <p class="phone-info" data-toggle="tooltip" data-placement="bottom" title="615-394-9353">Phone</p>
+      </div>
+      <div class="col-md-2 text-center"> 
+         <%= link_to 'Resume', 'BGresume.pdf', class: "resume-info", style: "text-decoration: none;color: #2c6ab0;", download: 'BrandonGoodmanResume' %>
+      </div>
+      <div class="col-md-2 text-center"> 
         <a href="https://github.com/Brandongoodman615"><%= image_tag("githubwhite.png", class: "github-info", alt: "Responsive image") %></a>
       </div>
-      <div class="col-md-3 text-center"> 
+      <div class="col-md-2 text-center"> 
         <a href="https://www.linkedin.com/in/brandon-goodman-50a3b2161/"><%= image_tag("linkedin.png", class: "linkedin-info", alt: "Responsive image") %></a>
       </div>
     </div>
-    <br /><br />
+    <br />
     <div class="row">
       <div class="col-md-8 intro_text">
         <h1 class="display-4 font-italic">Ruby on Rails Developer</h1>
